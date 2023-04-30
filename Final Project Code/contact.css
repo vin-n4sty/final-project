@@ -1,0 +1,288 @@
+html {
+  background-color: #1a1818;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: block;
+  margin: auto;
+  min-height: 100vh;
+  max-width: 100%;
+
+  letter-spacing: 2px;
+}
+
+header {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  margin: auto;
+  color: #ece7e1;
+  /* font-size: 10px; */
+}
+
+a {
+  text-decoration: none;
+  color: #ece7e1;
+}
+
+h1 {
+  font-weight: 500;
+  /* font-size: 17px; */
+}
+
+button {
+  width: 50px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 100%;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  /* gap: 50px;
+  margin-top: 180px; */
+}
+
+.main-text {
+  color: #ece7e1;
+  /* text-align: left; */
+  /* width: 220px; */
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  /* padding-bottom: 20px;
+  line-height: 25px; */
+}
+
+.main-links a {
+  text-decoration: none;
+  color: #ece7e1;
+}
+
+.main-links a:hover {
+  font-family: "Redacted Script", cursive;
+  font-weight: 300;
+}
+
+.header-links {
+  /* padding: 0px 20px; */
+  font-weight: 500;
+  /* font-size: 13px; */
+}
+
+/* .header-links:hover {
+  background-color: #ece7e1;
+  color: #1a1818;
+  font-weight: 600;
+  padding-right: 8px;
+} */
+
+.header-links  {
+	display: inline-block;
+	position: relative;
+}
+  :after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		bottom: 0;
+		height: 2px;
+		margin: -5px 0;
+		left: 0;
+		background-color: #ece7e1;
+		transition: all 0.4s ease-in 0s;
+	}
+	
+  :hover:after {
+		width: 80%;
+	}
+
+.main a:hover {
+  background-color: #ece7e1;
+  color: #1a1818;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+#darkish-button {
+  background: skyblue;
+}
+
+#lightish-button {
+  background: yellow;
+}
+
+#switcheroo {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  padding-right: 20px;
+}
+
+/* RESPONSIVE WORK */
+/* RESPONSIVE WORK */
+/* RESPONSIVE WORK */
+/* RESPONSIVE WORK */
+/* RESPONSIVE WORK */
+/* RESPONSIVE WORK */
+
+/* MOBILE */
+@media (max-width: 480px) {
+  header {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer {
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 2vw;
+  }
+
+  .header-links {
+    font-size: 2vw;
+    padding: 0px 14px 0px 9px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .main-text {
+    text-align: center;
+    line-height: 3vw;
+    padding-bottom: 4vw;
+    margin: 0vw 2vw;
+  }
+
+  .main-text h1 {
+    font-size: 3vw;
+    margin-top: 12vw;
+  }
+
+  .main-text p {
+    font-size: 2.4vw;
+  }
+
+  .main-links a {
+    font-size: 14vw;
+  }
+}
+
+/* TABLET */
+@media (min-width: 481px) {
+  header {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer {
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 1.5vw;
+  }
+
+  .header-links {
+    font-size: 1.8vw;
+    padding: 0px 14px 0px 9px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .main-text {
+    text-align: center;
+    line-height: 3vw;
+    padding-bottom: 2vw;
+    margin: 0vw 2vw;
+  }
+
+  .main-text h1 {
+    font-size: 2.8vw;
+    margin-top: 8vw;
+  }
+
+  .main-text p {
+    font-size: 1.6vw;
+    margin-bottom: 0.6vw;
+  }
+
+  .main-links a {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 769px) {
+  header {
+    padding: 30px 0px 0px 30px;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+  }
+
+  footer {
+    justify-content: right;
+    margin-top: 1vw;
+    padding-right: 5vw;
+    font-size: 0.7vw;
+  }
+
+  .header-links {
+    font-size: 0.9vw;
+    padding: 0px 20px 0px 10px;
+  }
+
+  .main {
+    display: flex;
+
+    gap: 10vw;
+    text-align: left;
+    margin-top: 7vw;
+  }
+
+  .main-text {
+    width: 14vw;
+    text-align: left;
+    line-height: 1.8vw;
+    padding-bottom: 2vw;
+    padding-left: 14vw;
+  }
+
+  .main-text h1 {
+    font-size: 1.4vw;
+    margin-top: 10vw;
+  }
+
+  .main-text p {
+    font-size: 0.9vw;
+    margin-bottom: 0;
+  }
+
+  .main-links a {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+}
